@@ -1,0 +1,8 @@
+<h1>New Todo</h1>
+
+<%= form_for Todo.new do |f| %>
+  <%= f.label :description %>
+  <%= f.text_field :description, placeholder: "Description" %>
+
+  <%= f.submit "Save" %>
+<% end %>
