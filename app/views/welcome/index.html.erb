@@ -1,0 +1,10 @@
+<h1>Blocitoff</h1>
+
+<p>Welcome<%=", #{@user.name}" if user_signed_in? %></p>
+
+<%= link_to "Login", new_user_session_path unless user_signed_in? %> <%= link_to "Create Account", new_user_registration_path unless user_signed_in?%>
+
+<%= "Get ready to see your task lists here (coming soon)" if user_signed_in? %>
+
+
+
