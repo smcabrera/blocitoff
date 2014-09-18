@@ -13,6 +13,8 @@ gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.3'
 # Use twitter bootstrap for easy styling
 gem 'bootstrap-sass', '~> 3.1.1'
+#gem "twitter-bootstrap-rails"
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
