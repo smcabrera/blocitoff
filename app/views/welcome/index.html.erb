@@ -2,9 +2,20 @@
 <div class="container">
   <% if user_signed_in? %>
     <p><%="Welcome, #{@user.name}" %></p>
-    <p><%= "Your task list here (coming soon)" %></p>
+    <p><%= "Here are your todos!" %></p>
+
+    <ul>
+      <% @todos.each do |todo| %>
+        <li><%= todo.description %></li>
+      <% end %>
+    </ul>
+
+    <%= link_to "Add Todo", new_todo_path, class: 'btn btn-success' %>
+
   <% else %>
+
     <%= "Blocitoff, a simple todo list that automatically deletes stale old tasks that you weren't really going to do anyway!" %>
   <% end %>
 </div>
+
 

@@ -4,9 +4,11 @@ class TodosController < ApplicationController
   end
 
   def create
-    @todo = Todo.new(todo_params)
+    @user = current_user
+    @todo = @user.todos.build(todo_params)
+
     if @todo.save
-      redirect_to @todo, notice: "Your new TODO was saved!"
+      redirect_to root_path, notice: "Your new TODO was saved!"
     else
       flash[:notice] = "Sorry, your task couldn't be saved. It needs a description."
       render :new
@@ -16,8 +18,5 @@ class TodosController < ApplicationController
   def todo_params
     params.require(:todo).permit(:description)
   end
-
-  def show
-    @todo = Todo.find params[:id]
-  end
 end
+
