@@ -4,18 +4,30 @@
     <p><%="Welcome, #{@user.name}" %></p>
     <p><%= "Here are your todos!" %></p>
 
-    <ul>
-      <% @todos.each do |todo| %>
-        <li><%= todo.description %></li>
-      <% end %>
-    </ul>
+    <div class="row">
+      <div class="col-md-8">
+        <ul>
+          <% @todos.each do |todo| %>
+            <div class="row <%= todo.complete? ? 'complete-class' : 'incomplete-class' %>">
+              <div class="col-md-8">
+                <li><%= todo.description %></li>
+              </div>
+              <div class="col-md-4">
+                <%= button_to "Done", {:controller => :todos, :action => 'update',
+                   :id => todo.id }, :method => :put, class: 'btn btn-sm btn-primary' %>
+              </div>
+            </div>
+          <% end %>
+        </ul>
+        <%= link_to "Add Todo", new_todo_path, class: 'btn btn-success' %>
+      </div>
 
-    <%= link_to "Add Todo", new_todo_path, class: 'btn btn-success' %>
-
+      <div class="col-md-4">
+      </div>
+    </div>
   <% else %>
 
     <%= "Blocitoff, a simple todo list that automatically deletes stale old tasks that you weren't really going to do anyway!" %>
   <% end %>
 </div>
-
 

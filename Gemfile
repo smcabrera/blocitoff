@@ -60,6 +60,3 @@ gem 'spring',        group: :development
 
 # User Devise for authentication
 gem 'devise'
-
-# Pry because it's awesome
-gem 'pry'

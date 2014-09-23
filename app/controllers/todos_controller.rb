@@ -15,6 +15,17 @@ class TodosController < ApplicationController
     end
   end
 
+  def update
+    @todo = Todo.find(params[:id])
+
+    if @todo.toggle_complete
+      redirect_to root_path
+    else
+      flash[:notice] = "Sorry, there was a problem processing your request. Please try again"
+      redirect_to root_path
+    end
+  end
+
   def todo_params
     params.require(:todo).permit(:description)
   end
