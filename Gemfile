@@ -22,9 +22,9 @@ end
 gem 'rails', '4.1.5'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '>= 3.2'
 # Use twitter bootstrap for easy styling
-gem 'bootstrap-sass', '~> 3.1.1'
+gem 'bootstrap-sass', '~> 3.2.0'
 #gem "twitter-bootstrap-rails"
 
 # Use Uglifier as compressor for JavaScript assets

@@ -1,30 +1,45 @@
 
 <div class="container">
+ <!-- When user is logged in -->
   <% if user_signed_in? %>
-    <p><%="Welcome, #{@user.name}" %></p>
-    <p><%= "Here are your todos!" %></p>
+    <h2><%="Welcome, #{@user.name}" %></h2>
+    <br /><br />
+    <h4><strong><%= "Your Tasks" %></strong></h4>
+    <br />
 
-    <div class="row">
-      <div class="col-md-8">
-        <ul>
-          <% @todos.each do |todo| %>
-            <div class="row <%= todo.complete? ? 'complete-class' : 'incomplete-class' %>">
-              <div class="col-md-8">
-                <li><%= todo.description %></li>
-              </div>
-              <div class="col-md-4">
-                <%= button_to "Done", {:controller => :todos, :action => 'update',
-                   :id => todo.id }, :method => :put, class: 'btn btn-sm btn-primary' %>
-              </div>
-            </div>
-          <% end %>
-        </ul>
-        <%= link_to "Add Todo", new_todo_path, class: 'btn btn-success' %>
-      </div>
 
-      <div class="col-md-4">
-      </div>
-    </div>
+
+
+<table class="table table-bordered table-hover" border="1" style="width:100%">
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Status</th>
+      <th>Days left</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @todos.each do |todo| %>
+    <tr>
+       <td class="<%= todo.complete? ? 'complete-class' : 'incomplete-class' %>">
+         <%= todo.description %>
+       </td>
+
+       <td>
+         <%= button_to "Done", {:controller => :todos, :action => 'update',
+         :id => todo.id }, :method => :put, class: 'btn btn-sm btn-primary' %>
+       </td>
+
+        <td>
+          <%= todo.days_left %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+ <!-- When user is NOT logged in -->
   <% else %>
 
     <%= "Blocitoff, a simple todo list that automatically deletes stale old tasks that you weren't really going to do anyway!" %>
