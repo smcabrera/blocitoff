@@ -10,39 +10,49 @@
 
 
 
-<table class="table table-bordered table-hover" border="1" style="width:100%">
+<table class="table table-bordered table-striped" border="1" style="width:100%">
   <thead>
     <tr>
       <th>Task</th>
-      <th>Status</th>
       <th>Days left</th>
+      <th>Complete</th>
     </tr>
   </thead>
 
   <tbody>
-  <% @todos.each do |todo| %>
-    <tr>
-       <td class="<%= todo.complete? ? 'complete-class' : 'incomplete-class' %>">
-         <%= todo.description %>
-       </td>
-
-       <td>
-         <%= button_to "Done", {:controller => :todos, :action => 'update',
-         :id => todo.id }, :method => :put, class: 'btn btn-sm btn-primary' %>
-       </td>
+    <% @todos.each do |todo| %>
+      <tr>
+        <td class="<%= todo.complete? ? 'complete-class' : 'incomplete-class' %>">
+          <%= todo.description %>
+        </td>
 
         <td>
           <%= todo.days_left %>
         </td>
+
+        <td>
+          <%= button_to "Done", {:controller => :todos, :action => 'update',
+          :id => todo.id }, :method => :put, class: 'btn btn-sm btn-primary' %>
+        </td>
       </tr>
     <% end %>
   </tbody>
+  <tfoot>
+    <tr>
+      <td>
+      </td>
+      <td>
+        <%= link_to "New Todo", new_todo_path, class: 'btn btn-success' %>
+      </td>
+    </tr>
+  </tfoot>
+
 </table>
 
  <!-- When user is NOT logged in -->
-  <% else %>
+<% else %>
 
     <%= "Blocitoff, a simple todo list that automatically deletes stale old tasks that you weren't really going to do anyway!" %>
-  <% end %>
+<% end %>
 </div>
 
