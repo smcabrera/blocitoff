@@ -1,0 +1,46 @@
+
+  <h2><%="Welcome, #{@user.name}" %></h2>
+    <br /><br />
+  <h4><strong><%= "Your Tasks" %></strong></h4>
+  <br />
+
+<table class="table table-bordered table-striped" border="1" style="width:100%">
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Days left</th>
+      <th>Complete</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todos.each do |todo| %>
+      <tr>
+        <td class="<%= todo.complete? ? 'complete-class' : 'incomplete-class' %>">
+          <%= todo.description %>
+        </td>
+
+        <td>
+          <%= todo.days_left %>
+        </td>
+
+        <td>
+          <%= button_to "Done", {:controller => :todos, :action => 'update',
+          :id => todo.id }, :method => :put, class: 'btn btn-sm btn-primary' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>
+      </td>
+      <td>
+        <%#= link_to "New Todo", new_todo_path, class: 'btn btn-success' %>
+        <%= render partial: "form", locals: {todo: Todo.new} %>
+      </td>
+    </tr>
+  </tfoot>
+
+</table>
+

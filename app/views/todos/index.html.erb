@@ -1,0 +1,12 @@
+
+<div class="container">
+ <!-- When user is logged in -->
+  <% if user_signed_in? %>
+ <%= render 'todo_dashboard' %>
+ <!-- When user is NOT logged in -->
+<% else %>
+
+    <%= "Blocitoff, a simple todo list that automatically deletes stale old tasks that you weren't really going to do anyway!" %>
+<% end %>
+</div>
+

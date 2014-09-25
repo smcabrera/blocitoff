@@ -1,4 +1,9 @@
 class TodosController < ApplicationController
+  def index
+    @user = current_user if user_signed_in?
+    @todos = @user.todos.all if @user
+  end
+
   def new
     @todo = Todo.new
   end
@@ -7,11 +12,9 @@ class TodosController < ApplicationController
     @user = current_user
     @todo = @user.todos.build(todo_params)
 
-    if @todo.save
-      redirect_to root_path, notice: "Your new TODO was saved!"
-    else
-      flash[:notice] = "Sorry, your task couldn't be saved. It needs a description."
-      render :new
+    @todo.save
+    respond_to do |format|
+      format.js { render js: "alert('#{@todo.description}')"}
     end
   end
 
