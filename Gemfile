@@ -60,3 +60,7 @@ gem 'spring',        group: :development
 
 # User Devise for authentication
 gem 'devise'
+
+# Manage cron jobs with Whenever
+gem 'whenever', :require => false
+
