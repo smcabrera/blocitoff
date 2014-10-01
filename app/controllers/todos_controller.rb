@@ -13,16 +13,17 @@ class TodosController < ApplicationController
     @todo = @user.todos.build(todo_params)
 
     @todo.save
-    respond_to do |format|
-      format.js { render js: "alert('#{@todo.description}')"}
-    end
+    #respond_to do |format|
+    #  format.js { render js: "alert('#{@todo.description}')"}
+    #end
+    render :create
   end
 
   def update
     @todo = Todo.find(params[:id])
 
     if @todo.toggle_complete
-      redirect_to root_path
+     render :update #  redirect_to root_path
     else
       flash[:notice] = "Sorry, there was a problem processing your request. Please try again"
       redirect_to root_path
