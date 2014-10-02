@@ -26,7 +26,7 @@
 
         <td>
           <%= button_to "Done", {:controller => :todos, :action => 'update',
-          :id => todo.id }, :method => :put, class: 'btn btn-sm btn-primary' %>
+          :id => todo.id }, :method => :put, class: 'btn btn-sm btn-primary', remote: true %>
         </td>
       </tr>
     <% end %>

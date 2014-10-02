@@ -1,0 +1,18 @@
+// This code fires when the update action is triggered from the todos controller 
+// @todo is available
+//
+
+var tableRows = document.getElementsByTagName("tr");
+
+for(var i = 1; i < tableRows.length - 1; i++) {
+  //iterate over the relevant tableRows and stop at the newly updated task
+  var row = tableRows[i];
+  var task = row.children[0];
+  if (task.innerText == "<%= @todo.description %>"){
+    row.className = "info";
+  }
+  else {
+    row.className = "";
+  }
+}
+
