@@ -60,3 +60,9 @@ gem 'spring',        group: :development
 
 # User Devise for authentication
 gem 'devise'
+
+# Use RestClient gem for creating Command Line Interface
+gem 'rest_client'
+
+
+
