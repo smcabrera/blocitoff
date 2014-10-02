@@ -1,0 +1,37 @@
+// Select the table
+
+var tableRows = document.getElementsByTagName("tr");
+
+// Append a new row right before the last one
+
+var addRow = function (){
+  target = tableRows[(tableRows.length - 2)]
+  var newElement = document.createElement('tr');
+  row = target.parentNode.appendChild(newElement, target);
+  // add three empty cells
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell2 = row.insertCell(2);
+  return newElement;
+}
+
+// Modify the row to have the right description and days left along with the complete button
+description = "<%= @todo.description %>"
+daysLeft = "<%= @todo.days_left %>"
+completeButton = "place button here!"; //TODO: create a button
+
+// var buildCompleteButton = function() {
+
+// }
+
+var modifyRow = function(row) {
+  row.className = "success";
+  cells = row.children;
+  cells[0].innerText = description;
+  cells[1].innerText = daysLeft;
+  cells[2].appendChild = completeButton;
+}
+
+newRow = addRow();
+modifyRow(newRow);
+
