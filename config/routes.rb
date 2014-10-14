@@ -14,6 +14,9 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   resources :todos, except: [:destroy]
+  namespace :api do
+    resources :todos
+  end
 
   # Example resource route with options:
   #   resources :products do

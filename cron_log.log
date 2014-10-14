@@ -1,0 +1,158 @@
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247: [BUG] Segmentation fault at 0x000016
+ruby 2.1.2p95 (2014-05-08 revision 45877) [i686-linux]
+
+-- Control frame information -----------------------------------------------
+c:0076 p:---- s:0286 e:000285 CFUNC  :require
+c:0075 p:0010 s:0282 e:000281 BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247
+c:0074 p:0054 s:0280 e:000279 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232
+c:0073 p:0015 s:0275 e:000274 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247
+c:0072 p:0016 s:0270 e:000269 BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/mail-2.5.4/lib/load_parsers.rb:27 [FINISH]
+c:0071 p:---- s:0267 e:000266 CFUNC  :each
+c:0070 p:0082 s:0264 e:000263 CLASS  /home/stephen/.rvm/gems/ruby-2.1.2/gems/mail-2.5.4/lib/load_parsers.rb:25
+c:0069 p:0009 s:0261 e:000260 TOP    /home/stephen/.rvm/gems/ruby-2.1.2/gems/mail-2.5.4/lib/load_parsers.rb:6 [FINISH]
+c:0068 p:---- s:0259 e:000258 CFUNC  :require
+c:0067 p:0010 s:0255 e:000254 BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247
+c:0066 p:0054 s:0253 e:000252 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232
+c:0065 p:0015 s:0248 e:000247 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247
+c:0064 p:0375 s:0243 e:000242 CLASS  /home/stephen/.rvm/gems/ruby-2.1.2/gems/mail-2.5.4/lib/mail.rb:79
+c:0063 p:0009 s:0241 e:000240 TOP    /home/stephen/.rvm/gems/ruby-2.1.2/gems/mail-2.5.4/lib/mail.rb:2 [FINISH]
+c:0062 p:---- s:0239 e:000238 CFUNC  :require
+c:0061 p:0010 s:0235 e:000234 BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247
+c:0060 p:0054 s:0233 e:000232 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232
+c:0059 p:0015 s:0228 e:000227 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247
+c:0058 p:0007 s:0223 e:000222 TOP    /home/stephen/.rvm/gems/ruby-2.1.2/gems/actionmailer-4.1.5/lib/action_mailer/base.rb:1 [FINISH]
+c:0057 p:0011 s:0221 e:000220 BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/actionmailer-4.1.5/lib/action_mailer/railtie.rb:49 [FINISH]
+c:0056 p:---- s:0219 e:000218 CFUNC  :call
+c:0055 p:0020 s:0215 e:000214 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/lazy_load_hooks.rb:36
+c:0054 p:0013 s:0209 e:000208 BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/lazy_load_hooks.rb:45 [FINISH]
+c:0053 p:---- s:0205 e:000204 CFUNC  :each
+c:0052 p:0036 s:0202 e:000201 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/lazy_load_hooks.rb:44
+c:0051 p:0016 s:0197 e:000196 BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/application/finisher.rb:64 [FINISH]
+c:0050 p:---- s:0195 e:000194 CFUNC  :instance_exec
+c:0049 p:0014 s:0191 e:000190 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/initializable.rb:30
+c:0048 p:0018 s:0187 e:000186 BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/initializable.rb:55
+c:0047 p:0021 s:0184 e:000183 BLOCK  /home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/tsort.rb:226
+c:0046 p:0008 s:0181 e:000180 BLOCK  /home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/tsort.rb:348
+c:0045 p:0094 s:0178 E:0018ac METHOD /home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/tsort.rb:427
+c:0044 p:0034 s:0167 E:001fd8 BLOCK  /home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/tsort.rb:347 [FINISH]
+c:0043 p:---- s:0164 e:000163 CFUNC  :each
+c:0042 p:---- s:0162 e:000161 CFUNC  :call
+c:0041 p:0020 s:0159 E:00045c METHOD /home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/tsort.rb:345
+c:0040 p:0017 s:0152 E:0003e4 METHOD /home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/tsort.rb:224
+c:0039 p:0037 s:0147 E:0012e0 METHOD /home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/tsort.rb:205
+c:0038 p:0028 s:0141 E:000324 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/initializable.rb:54
+c:0037 p:0027 s:0136 E:001340 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/application.rb:300
+c:0036 p:0032 s:0132 E:00138c TOP    /home/stephen/code/blocitoff/config/environment.rb:5 [FINISH]
+c:0035 p:---- s:0130 e:000129 CFUNC  :require
+c:0034 p:0010 s:0126 E:001414 BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247
+c:0033 p:0054 s:0124 E:001494 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232
+c:0032 p:0015 s:0119 E:0013dc METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247
+c:0031 p:0030 s:0114 E:0014f0 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/application.rb:276
+c:0030 p:0021 s:0110 E:000b5c BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/application.rb:379 [FINISH]
+c:0029 p:---- s:0108 e:000107 CFUNC  :call
+c:0028 p:0028 s:0103 E:001590 BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:240 [FINISH]
+c:0027 p:---- s:0100 e:000099 CFUNC  :each
+c:0026 p:0113 s:0097 E:001550 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:235
+c:0025 p:0075 s:0093 E:001634 BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:179
+c:0024 p:0014 s:0091 E:0016ac METHOD /home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211
+c:0023 p:0025 s:0088 E:0015fc METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:172
+c:0022 p:0024 s:0081 E:00174c BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:201 [FINISH]
+c:0021 p:---- s:0077 e:000076 CFUNC  :each
+c:0020 p:0031 s:0074 E:00170c METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:199
+c:0019 p:0062 s:0069 E:0017ec BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:178
+c:0018 p:0014 s:0067 E:001864 METHOD /home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211
+c:0017 p:0025 s:0064 E:0017b4 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:172
+c:0016 p:0036 s:0057 E:0018c4 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:165
+c:0015 p:0033 s:0052 E:00191c METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:150
+c:0014 p:0009 s:0045 E:0019d8 BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:106 [FINISH]
+c:0013 p:---- s:0042 e:000041 CFUNC  :each
+c:0012 p:0039 s:0039 E:00199c BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:106
+c:0011 p:0025 s:0037 E:001a68 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:115
+c:0010 p:0007 s:0033 E:001964 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:100
+c:0009 p:0019 s:0030 E:001b0c BLOCK  /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:78
+c:0008 p:0006 s:0028 E:000c88 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:176
+c:0007 p:0007 s:0024 E:0007e4 METHOD /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:75
+c:0006 p:0040 s:0021 E:001da4 TOP    /home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/bin/rake:33 [FINISH]
+c:0005 p:---- s:0019 e:000018 CFUNC  :load
+c:0004 p:0135 s:0015 E:0003e4 EVAL   /home/stephen/.rvm/gems/ruby-2.1.2/bin/rake:23 [FINISH]
+c:0003 p:---- s:0011 e:000010 CFUNC  :eval
+c:0002 p:0118 s:0005 E:000188 EVAL   /home/stephen/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15 [FINISH]
+c:0001 p:0000 s:0002 E:001be4 TOP    [FINISH]
+
+/home/stephen/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+/home/stephen/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+/home/stephen/.rvm/gems/ruby-2.1.2/bin/rake:23:in `<main>'
+/home/stephen/.rvm/gems/ruby-2.1.2/bin/rake:23:in `load'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/bin/rake:33:in `<top (required)>'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:75:in `run'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:176:in `standard_exception_handling'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:78:in `block in run'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:100:in `top_level'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:115:in `run_with_threads'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:106:in `block in top_level'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:106:in `each'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:106:in `block (2 levels) in top_level'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/application.rb:150:in `invoke_task'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:165:in `invoke'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:172:in `invoke_with_call_chain'
+/home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:178:in `block in invoke_with_call_chain'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:199:in `invoke_prerequisites'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:199:in `each'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:201:in `block in invoke_prerequisites'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:172:in `invoke_with_call_chain'
+/home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:179:in `block in invoke_with_call_chain'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:235:in `execute'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:235:in `each'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:240:in `block in execute'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/rake-10.3.2/lib/rake/task.rb:240:in `call'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/application.rb:379:in `block in run_tasks_blocks'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/application.rb:276:in `require_environment!'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232:in `load_dependency'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `block in require'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+/home/stephen/code/blocitoff/config/environment.rb:5:in `<top (required)>'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/application.rb:300:in `initialize!'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/initializable.rb:54:in `run_initializers'
+/home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/tsort.rb:205:in `tsort_each'
+/home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/tsort.rb:224:in `tsort_each'
+/home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/tsort.rb:345:in `each_strongly_connected_component'
+/home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/tsort.rb:345:in `call'
+/home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/tsort.rb:345:in `each'
+/home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/tsort.rb:347:in `block in each_strongly_connected_component'
+/home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/tsort.rb:427:in `each_strongly_connected_component_from'
+/home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+/home/stephen/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/tsort.rb:226:in `block in tsort_each'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/initializable.rb:55:in `block in run_initializers'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/initializable.rb:30:in `run'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/initializable.rb:30:in `instance_exec'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/application/finisher.rb:64:in `block in <module:Finisher>'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/lazy_load_hooks.rb:44:in `each'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/lazy_load_hooks.rb:36:in `execute_hook'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/lazy_load_hooks.rb:36:in `call'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/actionmailer-4.1.5/lib/action_mailer/railtie.rb:49:in `block in <class:Railtie>'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/actionmailer-4.1.5/lib/action_mailer/base.rb:1:in `<top (required)>'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232:in `load_dependency'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `block in require'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/mail-2.5.4/lib/mail.rb:2:in `<top (required)>'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/mail-2.5.4/lib/mail.rb:79:in `<module:Mail>'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232:in `load_dependency'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `block in require'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/mail-2.5.4/lib/load_parsers.rb:6:in `<top (required)>'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/mail-2.5.4/lib/load_parsers.rb:25:in `<module:Mail>'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/mail-2.5.4/lib/load_parsers.rb:25:in `each'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/mail-2.5.4/lib/load_parsers.rb:27:in `block in <module:Mail>'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232:in `load_dependency'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `block in require'
+/home/stephen/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+
+-- C level backtrace information -------------------------------------------
