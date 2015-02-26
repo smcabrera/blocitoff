@@ -6,16 +6,16 @@ group :production do
 end
 
 group :development do
-  gem 'sqlite3'
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'pry'
   gem 'pry-rails'
-  gem 'binding_of_caller'
-  gem 'better_errors'
+  gem 'sqlite3'
 end
 
 group :development, :test do
-  gem 'rspec-rails'
   gem 'capybara'
+  gem 'rspec-rails'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -63,6 +63,4 @@ gem 'devise'
 
 # Use RestClient gem for creating Command Line Interface
 gem 'rest_client'
-
-
 
